@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UniversityInfoActivity">
+
+    <ImageView
+        android:id="@+id/universityPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_192sdp"
+        android:src="@drawable/university"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/universityInfo"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_115sdp"
+        android:layout_marginTop="168dp"
+        android:background="@drawable/layout_design"
+        android:elevation="@dimen/_15sdp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/universityPhoto">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:layout_marginStart="@dimen/_13sdp">
+            <TextView
+                android:id="@+id/universityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Астана медицина университеті,"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserratregular"/>
+
+            <TextView
+                android:id="@+id/universityId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="001"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserratsemibold"
+                android:textSize="@dimen/_14sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_25sdp">
+            <ImageView
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:src="@drawable/city"/>
+            <TextView
+                android:id="@+id/universityCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Нұр-Сұлтан"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserratregular"
+                android:textSize="@dimen/_13sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_5sdp">
+            <ImageView
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:src="@drawable/phone"/>
+            <TextView
+                android:id="@+id/universityNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8(7172) 53 94 24"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserratregular"
+                android:textSize="@dimen/_13sdp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subjectLayout"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_52sdp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/layout_design"
+        android:elevation="@dimen/_15sdp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/universityInfo">
+
+        <TextView
+            android:id="@+id/subjectName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Биология-Химия"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserratregular"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_30sdp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mamandyktarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/subjectLayout">
+
+        <LinearLayout
+            android:layout_width="@dimen/_295sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/layout_design2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/montserratregular"
+                android:text="5В110100-Мейірбике ісі"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_295sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/layout_design2"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5В130100-Жалпы медицина"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserratregular"
+                android:textSize="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_8sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_295sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/layout_design2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_3sdp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5В130200-Стоматология"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserratregular"
+                android:textSize="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_8sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/_295sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/layout_design2"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5В130200-Қоғамдық денсаулық сақтау"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserratregular"
+                android:textSize="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_8sdp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
